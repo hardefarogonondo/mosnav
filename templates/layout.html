@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>MosNav App</title>
+        <!-- <link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename='styles/main.css') }}">
+    </head>
+    <body>
+        <div class = "container">
+            {% block body %}{% endblock %}
+        </div>
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
