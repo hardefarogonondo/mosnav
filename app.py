@@ -2,9 +2,9 @@ from flask import Flask, Blueprint
 from flask import render_template, request
 import requests
 
-key = '47ec0d7d-ea0a-4a20-bcee-66b897ea33bb'
+# key = '47ec0d7d-ea0a-4a20-bcee-66b897ea33bb'
 
-url = "https://geocode-maps.yandex.ru/1."
+# url = "https://geocode-maps.yandex.ru/1."
 
 api_blueprint = Blueprint('api_blueprint', __name__)
 
