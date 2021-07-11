@@ -6,7 +6,10 @@ key = '47ec0d7d-ea0a-4a20-bcee-66b897ea33bb'
 
 url = "https://geocode-maps.yandex.ru/1."
 
+api_blueprint = Blueprint('api_blueprint', __name__)
+
 app = Flask(__name__)
+app.register_blueprint(api_blueprint)
 app.debug = True
 
 @app.route('/')
@@ -18,6 +21,10 @@ def search():
     text = request.form['text']
     processed_text = text.upper()
     return processed_text
+
+@api_blueprint.route('/')
+def index():
+    return "test"
 
 # @app.route('/')    
 # def get_posts():
